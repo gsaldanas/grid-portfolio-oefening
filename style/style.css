@@ -5,15 +5,15 @@
 }
 @font-face {
   font-family: LatoBlack;
-  src: url(/fonts/Lato/Lato-Black.ttf);
+  src: url(/fonts/Lato-Black.ttf);
 }
 @font-face {
   font-family: LatoBold;
-  src: url(/fonts/Lato/Lato-Bold.ttf);
+  src: url(/fonts/Lato-Bold.ttf);
 }
 @font-face {
   font-family: LatoReg;
-  src: url(/fonts/Lato/Lato-Regular.ttf);
+  src: url(/fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: LatoLight;
@@ -29,13 +29,49 @@ main {
   flex-direction: column;
   background-color: #f2f2f2;
   height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 main > h1 {
   font-size: 30px;
   font-family: LatoBlack;
   color: #6c728b;
+  justify-self: start;
+  width: 100%;
+  margin-bottom: 1em;
 }
 main > p {
-  color: #cbc5cc;
+  font-family: LatoLight;
   font-size: 18px;
+  line-height: 30px;
+  color: #cbc5cc;
+}
+/*GRID STYLE*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+.grid-item {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.681);
+  justify-content: center;
+  min-height: 250px;
+}
+.grid-item-picture {
+  border: 3px solid #616a86;
+  border-radius: 50%;
+}
+.grid-item-picture img {
+  object-fit: cover;
+  width: 66px;
+  height: 66px;
+  padding: 0.8em;
+}
+.grid-item-info .subtitle {
+  color: yellow;
+  font-family: LatoBlack;
+  font-size: 18px;
+  color: #514e72;
 }
