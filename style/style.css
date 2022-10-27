@@ -15,9 +15,27 @@
   font-family: LatoReg;
   src: url(/fonts/Lato/Lato-Regular.ttf);
 }
-main {
+@font-face {
+  font-family: LatoLight;
+  src: url(/fonts/Lato-Light.ttf);
+}
+body {
   background-color: #f2f2f2;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  height: 100vh;
 }
 main > h1 {
   font-size: 30px;
+  font-family: LatoBlack;
+  color: #6c728b;
+}
+main > p {
+  color: #cbc5cc;
+  font-size: 18px;
 }
