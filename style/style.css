@@ -39,6 +39,7 @@ main > h1 {
   justify-self: start;
   width: 100%;
   margin-bottom: 1em;
+  margin-top: auto;
 }
 main > p {
   font-family: LatoLight;
@@ -50,18 +51,20 @@ main > p {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2em;
+  gap: 30px;
+  margin: auto;
 }
 .grid-item {
   display: flex;
-  align-items: center;
-  background-color: rgba(255, 0, 0, 0.681);
   justify-content: center;
-  min-height: 250px;
 }
 .grid-item-picture {
   border: 3px solid #616a86;
   border-radius: 50%;
+  align-self: flex-start;
+}
+.grid-item-picture {
+  margin-right: 25px;
 }
 .grid-item-picture img {
   object-fit: cover;
@@ -74,4 +77,56 @@ main > p {
   font-family: LatoBlack;
   font-size: 18px;
   color: #514e72;
+  margin-bottom: 20px;
+}
+.grid-item-info .grid-item-text {
+  font-family: LatoLight;
+  font-size: 12px;
+  color: #686f88;
+  line-height: 21.5px;
+}
+/*portfolio section*/
+section.portfolio {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+
+  height: 100vh;
+  background-color: #2d2f3a;
+  flex-direction: column;
+}
+.portfolio h2 {
+  font-family: LatoBlack;
+  color: #696e86;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+.portfolio p {
+  color: #696e86;
+  font-family: LatoLight;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+.portfolio ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.portfolio ul li {
+  list-style-type: none;
+  padding-right: 15px;
+}
+.portfolio ul li a {
+  text-decoration: none;
+  font-family: LatoLight;
+  color: #696e86;
+  border: 1px solid #696e86;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+.portfolio ul li > a.higlight {
+  color: white;
+  border: white 1px solid;
 }
