@@ -88,11 +88,7 @@ main > p {
 /*portfolio section*/
 section.portfolio {
   display: flex;
-  padding-left: 5%;
-  padding-right: 5%;
-  align-items: center;
-
-  height: 100vh;
+  padding: 5%;
   background-color: #2d2f3a;
   flex-direction: column;
 }
@@ -129,4 +125,15 @@ section.portfolio {
 .portfolio ul li > a.higlight {
   color: white;
   border: white 1px solid;
+}
+/* grid maken */
+article {
+  margin-top: 2em;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+article .image img {
+  width: 100%;
 }
